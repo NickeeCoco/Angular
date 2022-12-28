@@ -6,9 +6,7 @@ import { ServicesHomeComponent } from './services-home/services-home.component';
 
 
 @NgModule({
-  declarations: [
-    ServicesHomeComponent
-  ],
+  declarations: [ServicesHomeComponent],
   imports: [
     CommonModule,
     ServicesRoutingModule

@@ -6,9 +6,7 @@ import { ContactHomeComponent } from './contact-home/contact-home.component';
 
 
 @NgModule({
-  declarations: [
-    ContactHomeComponent
-  ],
+  declarations: [ContactHomeComponent],
   imports: [
     CommonModule,
     ContactRoutingModule

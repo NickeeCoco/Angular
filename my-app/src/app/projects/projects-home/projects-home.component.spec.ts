@@ -11,7 +11,9 @@ describe('ProjectsHomeComponent', () => {
       declarations: [ ProjectsHomeComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ProjectsHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

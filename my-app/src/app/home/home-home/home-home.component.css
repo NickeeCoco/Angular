@@ -10,14 +10,14 @@ h2 {
 }
 
 .personalInfo {
-    background: #0e2352;
+    background:#0e2352;
     color: white;
     text-align: center;
     padding: .3vw 0 1vw 0;
     margin: 0 -2vw;
 }
 
-.educationDates, .employmentDates {
+.educationDates, .employmentDates { 
     display: inline-block;
-    float: right;
+    float:right;
 }
