@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects-home.component.css']
 })
 export class ProjectsHomeComponent implements OnInit {
+  firstName: string ="William";
+  lastName: string = "Wallace";
+  phoneNumber: string = "(201) 748-6000";
 
   constructor() { }
 
