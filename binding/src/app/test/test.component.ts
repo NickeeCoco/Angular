@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TestComponent {
   public name = "Morgane"
+  public siteUrl = window.location.href
   
   constructor() {}
 
