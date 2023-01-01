@@ -5,3 +5,10 @@
 <h2>{{name.toUpperCase()}}</h2>
 <h2>{{greetUser()}}</h2>
 <h2>{{siteUrl}}</h2>
+
+<!-- property binding -->
+<input type="text" [id]="myId" value="Morgane" />
+<input [disabled]="isDisabled" type="text" [id]="myId" value="Morgane" />
+
+<!-- interpolation (only strings) -->
+<input type="text" id={{myId}} value="Morgane" />

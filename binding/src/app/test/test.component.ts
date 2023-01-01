@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
-  public name = "Morgane"
-  public siteUrl = window.location.href
+  public name = "Morgane";
+  public siteUrl = window.location.href;
+  public myId = "testId";
+  public isDisabled = true;
   
   constructor() {}
 
