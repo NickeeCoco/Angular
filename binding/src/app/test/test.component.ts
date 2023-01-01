@@ -26,6 +26,8 @@ export class TestComponent {
   }
   public greeting = "";
   public greeting2 = "";
+
+  public firstName = "";
   
   constructor() {}
 
@@ -38,5 +40,9 @@ export class TestComponent {
   onClick(event: any) {
     console.log(event);
     this.greeting = event.type;
+  }
+
+  logMessage(value: any) {
+    console.log(value);
   }
 }

@@ -34,3 +34,15 @@
 <br>
 <button (click)="greeting2='Welcome Charlie'">Greet</button>
 {{ greeting2 }}
+
+<br><br>
+
+<!-- TEMPLATE REFERENCE VARIABLES -->
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
+<br><br>
+
+<!-- TWO WAY BINDING -->
+<!-- needs FormsModule import in app.module.ts -->
+<input [(ngModel)]="firstName" type="text">
+{{firstName}}
