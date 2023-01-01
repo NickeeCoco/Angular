@@ -6,9 +6,31 @@
 <h2>{{greetUser()}}</h2>
 <h2>{{siteUrl}}</h2>
 
+<!-- DATA BINDING -->
 <!-- property binding -->
 <input type="text" [id]="myId" value="Morgane" />
 <input [disabled]="isDisabled" type="text" [id]="myId" value="Morgane" />
 
 <!-- interpolation (only strings) -->
 <input type="text" id={{myId}} value="Morgane" />
+
+<!-- class binding -->
+<h2 [class]="successClass">Success</h2>
+<!-- conditionnal -->
+<h2 [class.text-danger]="hasError">Has error</h2>
+<!-- multiple classes -->
+<h2 [ngClass]="messageClasses">Multiple classes binding</h2>
+<!-- style binding -->
+<h2 [style.color]="'orange'">Style binding</h2>
+<!-- conditional style binding -->
+<h2 [style.color]="hasError ? 'red' : 'green'">Conditional style binding</h2>
+<h2 [style.color]="highlightColor">More style binding</h2>
+<!-- multiple style binding -->
+<h2 [ngStyle]="titleStyles">Multiple style binding</h2>
+
+<!-- EVENT BINDING -->
+<button (click)="onClick($event)">Greet</button>
+{{ greeting }}
+<br>
+<button (click)="greeting2='Welcome Charlie'">Greet</button>
+{{ greeting2 }}
