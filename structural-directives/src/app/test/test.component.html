@@ -1,0 +1,20 @@
+<!-- NGIF -->
+<h2 *ngIf="true">Angular</h2>
+
+<!-- if/else -->
+<h2 *ngIf="displayName; else elseBlock">Morgane</h2>
+
+<ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+</ng-template>
+
+<!-- if/else 2 -->
+<div *ngIf="displayName; then thenBlock; else elseBlock2"></div>
+<ng-template #thenBlock>
+    <h2>Nickee</h2>
+</ng-template>
+
+<ng-template #elseBlock2>
+    <h2>Hidden</h2>
+</ng-template>
+
