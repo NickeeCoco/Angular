@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TestComponent {
   displayName = false;
+  color = "gray";
+  colors = ["red", "blue", "green", "yellow"];
 }
