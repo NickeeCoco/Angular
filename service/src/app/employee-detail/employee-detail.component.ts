@@ -8,6 +8,7 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeeDetailComponent {
   public employees:any = [];
+  public errorMsg:any;
 
   constructor(private _employeeService : EmployeeService) {
 
@@ -15,6 +16,9 @@ export class EmployeeDetailComponent {
 
   ngOnInit() {
     this._employeeService.getEmployees()
-    .subscribe(data => this.employees = data);
-  }
+        .subscribe({
+          next: data => this.employees = data,
+          error: error => this.errorMsg = error
+        });
+}
 }
